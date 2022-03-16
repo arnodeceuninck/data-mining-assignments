@@ -97,11 +97,16 @@
     Our most interesting rules would contain only purchased items on the right side, but this is already taken into account when generating the rules.
     This are our new rules with 0.7 as minimum confidence sorted on confidence multiplied by support.
     \begin{verbatim}
-
+        {'purchase5814516'} -> {'purchase5814517'} (0.90, 46)
+        {'purchase5814516', 'cart5814516'} -> {'purchase5814517'} (0.90, 43)
+        {'cart5814516'} -> {'purchase5814517'} (0.86, 43)
+        {'cart5809911'} -> {'purchase5809910'} (0.78, 36)
+        {'purchase5819894'} -> {'purchase5823667'} (0.82, 23)
+        {'purchase5814516', 'purchase5814518'} -> {'purchase5814517'} (1.00, 18)
+        {'purchase5814518'} -> {'purchase5814517'} (0.86, 19)
+        {'purchase5855091'} -> {'purchase5855092'} (1.00, 16)
+        {'cart5814516', 'purchase5814518'} -> {'purchase5814517'} (1.00, 16)
+        {'purchase5855091', 'cart5855091'} -> {'purchase5855092'} (1.00, 16)
     \end{verbatim}
 
-
-
-    \section{Extra interesting rules}
-    After adding this, the rules with the highest confidence would be the most interesting, since those give higher chances of the user buying an items.
 \end{document}
